@@ -1,20 +1,20 @@
-# ZaUI Market
+<!-- # ZaUI Market
 
-<p style="display: flex; flex-wrap: wrap; gap: 4px">
+<!-- <p style="display: flex; flex-wrap: wrap; gap: 4px">
   <img alt="vite" src="https://img.shields.io/github/package-json/dependency-version/Zalo-MiniApp/zaui-market/dev/vite" />
   <img alt="react" src="https://img.shields.io/github/package-json/dependency-version/Zalo-MiniApp/zaui-market/react" />
   <img alt="zmp-ui" src="https://img.shields.io/github/package-json/dependency-version/Zalo-MiniApp/zaui-market/zmp-ui" />
   <img alt="zmp-sdk" src="https://img.shields.io/github/package-json/dependency-version/Zalo-MiniApp/zaui-market/zmp-sdk" />
   <img alt="jotai" src="https://img.shields.io/github/package-json/dependency-version/Zalo-MiniApp/zaui-market/jotai" />
   <img alt="tailwindcss" src="https://img.shields.io/github/package-json/dependency-version/Zalo-MiniApp/zaui-market/dev/tailwindcss" />
-</p>
+</p> -->
 
-A template for vendors to sale their products on the online market. It provides full features such as product viewing, shopping cart, payment, order management, profile management, etc.
+<!-- A template for vendors to sale their products on the online market. It provides full features such as product viewing, shopping cart, payment, order management, profile management, etc.
 
 |                      Demo                       |                  Entrypoint                  |
 | :---------------------------------------------: | :------------------------------------------: |
-| <img src="./docs/preview.webp" alt="Home page"> | <img src="./docs/qr.webp" alt="Entry point"> |
-
+| <img src="./docs/preview.webp" alt="Home page"> | <img src="./docs/qr.webp" alt="Entry point"> | -->
+<!-- 
 ## Setup
 
 ### Using Zalo Mini App Extension
@@ -125,4 +125,4 @@ Adjust CSS variables in `src/css/tailwind.scss` as needed to fit your desired br
   --zaui-light-button-secondary-background: #e3b2f1;
   --zaui-light-button-secondary-text: #590872;
 }
-```
+``` --> -->
