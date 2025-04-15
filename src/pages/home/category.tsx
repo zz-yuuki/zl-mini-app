@@ -23,7 +23,7 @@ export default function Category() {
         >
           <img
             src={icon_henkham}
-            className="w-15 h-15 object-cover rounded-full bg-skeleton"
+            className="w-15 h-15 object-cover bg-skeleton"
             alt={category.name}
           />
           <div className="text-center text-2xs w-full line-clamp-2 text-subtitle">

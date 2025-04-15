@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "ZaUI F&B",
+    "title": "ZaUI",
     "textColor": "white",
     "headerColor": "#ffffff",
     "statusBar": "transparent",
@@ -13,10 +13,10 @@
   "listSyncJS": [],
   "listAsyncJS": [],
   "template": {
-    "name": "zaui-market",
+    "name": "zaui",
     "apiUrl": "",
     "oaIDtoOpenChat": "4318657068771012646",
     "hosName": "Bệnh viện Đa Khoa Kiến Xương",
-    "hosAddress": "Tdp Quang Trung, thị trấn Kiến Xương, Huyện Kiến Xương, Tỉnh Thái Bình"
+    "hosAddress": "Quang Trung, Thị Trấn Kiến Xương, Huyện Kiến Xương, Tỉnh Thái Bình"
   }
 }

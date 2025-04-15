@@ -7,7 +7,7 @@ import { userInfoKeyState, userInfoState } from "@/state";
 import { useAtom, useAtomValue, useSetAtom } from "jotai";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
-import { Button, DatePicker, Input } from "zmp-ui";
+import { Button, DatePicker, Input, Select } from "zmp-ui";
 import axios from "axios";
 
 export interface ProductItemProps {
@@ -31,6 +31,7 @@ export default function ProductItem(props: ProductItemProps) {
 
   const [email, setEmail] = useState("");
   const [address, setAddress] = useState("");
+  const { OtpGroup, Option } = Select;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -60,7 +61,8 @@ export default function ProductItem(props: ProductItemProps) {
   };
   const [formData, setFormData] = useState({
     name: "",
-    date: getTodayDate(), // Will be stored as a string
+    date: getTodayDate(),
+    pk: '', // Will be stored as a string
     phone: "",
     email: "",
     address: "",
@@ -127,8 +129,26 @@ export default function ProductItem(props: ProductItemProps) {
             handleChange("date", localDate);
           }}
         />
+        <Select
+          label="Phòng khám"
+          // helperText="Helper text"
+          placeholder="Chọn phòng khám"
+          mask
+          maskCloseable
+          defaultValue={[]}
+          onChange={(e) => handleChange("pk", e)}
+          value={formData.pk}
+        >
+          <Option value="Phòng khám 2" title="Phòng khám 2" />
+          <Option value="Phòng khám 3" title="Phòng khám 3" />
+          <Option value="Phòng khám 4" title="Phòng khám 4" />
+          <Option value="Phòng khám 5" title="Phòng khám 5" />
+          {/* <Option value="5" title="" />
+          <Option value="6" title="Option 6" /> */}
+        </Select>
         <Input
           name="phone"
+          type="number"
           label="Số điện thoại*"
           required
           placeholder="Nhập số điện thoại"
@@ -144,9 +164,10 @@ export default function ProductItem(props: ProductItemProps) {
         <Input
           name="address"
           label="Địa chỉ"
-          placeholder="Nhập dịa chỉ"
+          placeholder="Nhập địa chỉ"
           onChange={(e) => handleChange('address',e.target.value)} value={formData.address}
         />
+        
       </div>
       <div className="p-6 pt-4 bg-section">
         <Button htmlType="submit" fullWidth>

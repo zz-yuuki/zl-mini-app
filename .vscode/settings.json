@@ -6,13 +6,13 @@
         "type": "object",
         "properties": {
           "template": {
-            "description": "Cấu hình riêng của template ZaUI F&B",
+            "description": "Cấu hình riêng của template ZaUI",
             "type": "object",
             "properties": {
               "name": {
                 "type": "string",
-                "enum": ["zaui-market"],
-                "description": "Tên template. Bắt buộc phải mang giá trị zaui-market"
+                "enum": ["zaui"],
+                "description": "Tên template. Bắt buộc phải mang giá trị zaui"
               },
               "apiUrl": {
                 "type": "string",
